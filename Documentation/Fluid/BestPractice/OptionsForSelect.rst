@@ -41,7 +41,7 @@ Abhilfe schafft hier die PHP Standardklasse :php:`stdClass`::
    $categories = array();
    $entries = array('car', 'bike', 'train');
    foreach ($entries as $entry) {
-     $category = new stdClass();
+     $category = new \StdClass();
      $category->key = $entry;
      $category->value = LocalizationUtility::translate('category.' . $entry, 'myExtName');
      $categories[] = $category;
